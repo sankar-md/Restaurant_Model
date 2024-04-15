@@ -6,7 +6,6 @@ body {
 }
 
 #header-nav{
-  margin-right: -40PX;
   background-color: #f6b319;
   border-radius: 0;
   border :0;
@@ -19,6 +18,11 @@ body {
   margin: 10px 15px 10px 0;
 }
 
+/*.container{
+  width: 90%;
+  height: 90%;
+}
+*/
 
 .navbar-brand h1{
   padding-top: 15px;
@@ -52,6 +56,7 @@ body {
 #nav-list a{
   text-align: center;
   color: #951C49;
+  font-weight: 500;
 }
 
 #nav-list li a:hover{
@@ -89,8 +94,16 @@ body {
   margin-top: -30PX;
 }
 
-@media(min-width: 1200px){
+.container .jumbotron{
+    box-shadow: 0 0 50px #3f0c1f;
+    border: 2px solid #3f0c1f;
+  }
 
+@media(min-width: 1200px){
+  .jumbotron{
+    background: url("../images/jumbotron_1200.jpg") no-repeat;
+    height: 675px;
+  }
 }
 @media(min-width: 992px) and (max-width: 1199px){
   #logo-img{
@@ -99,10 +112,85 @@ body {
     height: 100px;
     margin: 5px 5px 5px 0;
   }
+
+  .jumbotron{
+    background: url("../images/jumbotron_992.jpg") no-repeat;
+    height: 558px;
+  }
+
 }
 @media(min-width: 768px) and (max-width: 991px){
-  
+  .navbar-brand h1{
+    padding-top: 20px;
+    font-size: 4vw;
+  }
+
+  #nav-list{
+  margin-top: 20px;
+  }
+  .jumbotron{
+    background: url("../images/jumbotron_768.jpg") no-repeat;
+    height: 498px;
+  }
+
 }
 @media(max-width: 767px){
+  
+  .navbar-header button.navbar-toggle{
+  clear: both;
+  margin-top: -50px;
+  margin-bottom: 30px;
+  }
+
+  .navbar-brand{
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1{
+    padding-top: 10px;
+    font-size: 5vw;
+  }
+
+  .navbar-brand p{
+    font-size: .7em;
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+  }  
+
+  #collapsable-nav a{
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+
+  #collapsable-nav a span{
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+  #call-btn > a {
+    font-size: 1.5em;
+    display: block;
+    margin: 0 20px;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: #f6b319;
+    color: #951c49;
+  }
+  
+  #xs-deliver {
+    margin-top: 5px;
+    font-size: .7em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  .container .jumbotron {
+    margin-top: 30px;
+    padding: 0;
+  }
+
 
 }
