@@ -99,12 +99,15 @@ body {
     border: 2px solid #3f0c1f;
   }
 
+/*Large Display*/
 @media(min-width: 1200px){
   .jumbotron{
     background: url("../images/jumbotron_1200.jpg") no-repeat;
     height: 675px;
   }
 }
+
+/*Medium Display*/
 @media(min-width: 992px) and (max-width: 1199px){
   #logo-img{
     background: url('../images/restaurant-logo_medium.png');
@@ -119,6 +122,8 @@ body {
   }
 
 }
+
+/*Small Display*/
 @media(min-width: 768px) and (max-width: 991px){
   .navbar-brand h1{
     padding-top: 20px;
@@ -130,10 +135,12 @@ body {
   }
   .jumbotron{
     background: url("../images/jumbotron_768.jpg") no-repeat;
-    height: 498px;
+    height: 432px;
   }
 
 }
+
+/*Extra Small*/
 @media(max-width: 767px){
   
   .navbar-header button.navbar-toggle{
@@ -191,6 +198,8 @@ body {
     margin-top: 30px;
     padding: 0;
   }
+
+  
 
 
 }
