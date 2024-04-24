@@ -41,7 +41,7 @@ body {
 }
 
 p #Certified{
-    background: url('/images/star-k-logo.png') no-repeat;
+    background: url('../images/star-k-logo.png') no-repeat;
     width: 30px;
     height: 30px;
     vertical-align: center;
