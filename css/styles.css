@@ -242,6 +242,10 @@ p #Certified-text{
     padding: 0;
   }
 
+  #menu-tile, #specials-tile, #map-tile{
+    width: 360px;
+    margin: 0 auto 30px;
+  }
   
 
 
