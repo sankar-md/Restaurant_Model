@@ -141,9 +141,10 @@ p #Certified-text{
     width: 100%;
     margin-bottom: 15px;
     position: relative;
-    border: 1.5px solid #3F0C1F;
+    border: 1px solid #3F0C1F;
+    box-shadow: 0 1px 5px 0.3px #000;
     overflow: hidden;
-    border-radius: 15px;
+    border-radius: 7px;
   }
 
  #menu-tile:hover, #specials-tile:hover, #map-tile:hover{
@@ -173,6 +174,35 @@ p #Certified-text{
     opacity: .8;
   }
 
+.category-tile{
+  position: relative;
+  height: 200px;
+  width: 200px;
+  border: 2px solid #3fc01f;
+  overflow: hidden;
+  margin: 0 auto 15px;
+}
+
+.category-tile span{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 1  00%;
+  text-align: center;
+  font-size: 1.2em;
+  text-transform:uppercase ;
+  background-color: #000;
+  color: #fff;
+  opacity: 0.8;
+}  
+
+.category-tile:hover{
+  box-shadow: 0px 1px 30px 1px #cacc;
+}
+
+#menu-categories-title + div {
+  margin-bottom: 50px;
+}
 
 /*Large Display*/
 @media(min-width: 1200px){
@@ -296,4 +326,27 @@ p #Certified-text{
   
 
 
+
+}
+
+@media (max-width: 440.9px){
+
+  .navbar-brand h1{
+    padding-top: 5px;
+    font-size: 6vw;
+  }
+
+  #menu-tile, #specials-tile{
+    width: 280px;
+    margin: 0 auto 15px;
+  }
+
+  .col-xxs-12{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
+  }
 }
