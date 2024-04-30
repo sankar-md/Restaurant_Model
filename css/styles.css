@@ -200,7 +200,7 @@ p #Certified-text{
   box-shadow: 0px 1px 30px 1px #cacc;
 }
 
-#menu-categories-title + div {
+#menu-categories-tile + div {
   margin-bottom: 50px;
 }
 #main-content1{
@@ -215,37 +215,53 @@ p #Certified-text{
   width: 80%;
 }
 
+.menu-item-tile .menu-item-price{
+  font-size: 1.1em;
+  text-align: right;
+  margin-top: -15px;
+  margin-right: -15px;
+}
 
-/*.menu-item-photo{
+.menu-item-tile .menu-item-price span{
+  font-size: 0.7em;
+}
+
+.menu-item-photo{
   position: relative;
-  width: 250px;
+  border: 2px solid #3fc01f;
+  overflow: hidden;
+  padding: 0;
+  margin-right: -15px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  max-width: 250px;
 }
 
 .menu-item-no{
-  background-color: grey;
-  opacity: 0.8;
-  font-size: 12px;
-  color: red;
-  font-weight: 600;
-  padding: 4px;
-  border: 1px solid black;
-  border-radius: 20px;
   position: absolute;
-  bottom: -15px;
-  right: -10px;
-}*/
+  bottom: 0px;
+  right: 0px;
+  background-color: #557c3e;
+  text-align: center;
+  width: 80px;
+}
+
+.menu-item-description{
+  padding-right: 30px;
+}
+
+.menu-item-description h3{
+  margin: 0 0 10px;
+}
+
+.menu-item-details{
+  font-style: italic;
+  font-size: 0.7em;
+}
 
 
 
-
-
-
-
-
-
-
-
-/*Large Display*/
+/*Large Display*/ 
 @media(min-width: 1200px){
   .jumbotron{
     background: url("../images/jumbotron_1200.jpg") no-repeat;
@@ -282,6 +298,24 @@ p #Certified-text{
   .jumbotron{
     background: url("../images/jumbotron_768.jpg") no-repeat;
     height: 432px;
+  }
+
+  .menu-item-photo{
+  margin-left: 50px;
+  }
+
+  .menu-item-tile .menu-item-price{
+    margin-right: 45px;
+    font-size: 0.9em;
+  }
+
+  .menu-item-description{
+    margin: 10px 0 0 50px;
+    width: 85%;
+  }
+
+  .menu-item-description h3{
+    font-size: 1.3em;
   }
 
 }
@@ -364,12 +398,23 @@ p #Certified-text{
     width: 360px;
     margin: 0 auto 30px;
   }
-  
+
+  .menu-item-photo{
+    margin-right: auto;
+  }
+
+  .menu-item-tile .menu-item-description{
+    text-align: center;
+  }
+
+  .menu-item-tile .menu-item-price{
+    text-align: center;
+  }
 
 
 
 }
-
+/*Super Extra Small Device Only*/
 @media (max-width: 440.9px){
 
   .navbar-brand h1{
